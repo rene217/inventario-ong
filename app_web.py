@@ -110,7 +110,7 @@ if not st.session_state["autenticado"]:
             st.sidebar.error("Usuario o contraseña incorrectos")
             
     st.title("Sistema de Inventario - ONG")
-    st.warning("<- Por favor, inicia sesión en la barra lateral para acceder al sistema. (Credencial inicial por defecto: usuario **admin**, contraseña **1234**).")
+    st.warning("<- Por favor, inicia sesión en la barra lateral para acceder al sistema.")
     
 else:
     st.sidebar.success(f"Bienvenido/a:\n**{st.session_state['nombre_completo']}**\n\nRol: {st.session_state['rol']}")
